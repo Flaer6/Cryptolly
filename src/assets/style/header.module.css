@@ -1,0 +1,53 @@
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	font-size: 14px;
+	padding-top: 30px;
+}
+.menu {
+	display: flex;
+	align-items: center;
+	gap: 0 33px;
+}
+.list {
+	display: flex;
+	align-items: center;
+	gap: 0 48px;
+}
+.buttons {
+	display: flex;
+	align-items: center;
+	gap: 0 16px;
+	font-weight: 600;
+	font-family: 'Sofia Pro', sans-serif;
+}
+.link {
+	font-weight: 500;
+}
+.link:hover {
+	text-decoration: underline;
+}
+.signUp,
+.getStarted {
+	padding: 12px 24px;
+	border-radius: 100px;
+}
+.signUp {
+	border: 1px solid #fff;
+}
+.getStarted {
+	background: linear-gradient(
+		266deg,
+		#246cf9 -0.27%,
+		#1e68f6 -0.26%,
+		#0047d0 98.59%
+	);
+}

@@ -1,0 +1,197 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:after,
+*:after {
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited,
+a:hover {
+	text-decoration: none;
+	color: inherit;
+	display: inline-block;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Inter';
+	src: url('../fonts/Inter-Regular.eot');
+	src: local('Inter Regular'), local('Inter-Regular'),
+		url('../fonts/Inter-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Inter-Regular.woff2') format('woff2'),
+		url('../fonts/Inter-Regular.woff') format('woff'),
+		url('../fonts/Inter-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Inter';
+	src: url('../fonts/Inter-Medium.eot');
+	src: local('Inter Medium'), local('Inter-Medium'),
+		url('../fonts/Inter-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Inter-Medium.woff2') format('woff2'),
+		url('../fonts/Inter-Medium.woff') format('woff'),
+		url('../fonts/Inter-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Sora';
+	src: url('../fonts/Sora-Bold.eot');
+	src: local('Sora Bold'), local('Sora-Bold'),
+		url('../fonts/Sora-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Sora-Bold.woff2') format('woff2'),
+		url('../fonts/Sora-Bold.woff') format('woff'),
+		url('../fonts/Sora-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Graphik';
+	src: url('../fonts/Graphik-Medium.eot');
+	src: local('Graphik Medium'), local('Graphik-Medium'),
+		url('../fonts/Graphik-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Graphik-Medium.woff2') format('woff2'),
+		url('../fonts/Graphik-Medium.woff') format('woff'),
+		url('../fonts/Graphik-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Graphik';
+	src: url('../fonts/Graphik-Semibold.eot');
+	src: local('Graphik Semibold'), local('Graphik-Semibold'),
+		url('../fonts/Graphik-Semibold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Graphik-Semibold.woff2') format('woff2'),
+		url('../fonts/Graphik-Semibold.woff') format('woff'),
+		url('../fonts/Graphik-Semibold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Graphik';
+	src: url('../fonts/Graphik-Regular.eot');
+	src: local('Graphik Regular'), local('Graphik-Regular'),
+		url('../fonts/Graphik-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Graphik-Regular.woff2') format('woff2'),
+		url('../fonts/Graphik-Regular.woff') format('woff'),
+		url('../fonts/Graphik-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Sofia Pro Semi';
+	src: url('../fonts/SofiaProSemiBold.eot');
+	src: local('Sofia Pro Semi Bold'), local('SofiaProSemiBold'),
+		url('../fonts/SofiaProSemiBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SofiaProSemiBold.woff2') format('woff2'),
+		url('../fonts/SofiaProSemiBold.woff') format('woff'),
+		url('../fonts/SofiaProSemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Sofia Pro';
+	src: url('../fonts/SofiaProBold.eot');
+	src: local('Sofia Pro Bold'), local('SofiaProBold'),
+		url('../fonts/SofiaProBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SofiaProBold.woff2') format('woff2'),
+		url('../fonts/SofiaProBold.woff') format('woff'),
+		url('../fonts/SofiaProBold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Sofia';
+	src: url('../fonts/Sofia-Regular.eot');
+	src: local('Sofia'), local('Sofia-Regular'),
+		url('../fonts/Sofia-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Sofia-Regular.woff2') format('woff2'),
+		url('../fonts/Sofia-Regular.woff') format('woff'),
+		url('../fonts/Sofia-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	background-color: #1e1f25;
+	font-family: 'Graphik', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #a5adcf;
+}
+.container {
+	max-width: 1140px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
