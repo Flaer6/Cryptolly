@@ -1,16 +1,18 @@
 .promo {
 	position: relative;
 }
-.inner {
-	/* position: relative; */
-	padding-top: 167px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+.wrapper {
 	background-image: url('../images/grid-bg.svg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	padding-top: 167px;
+}
+.inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 96px;
 }
 .inner::before {
 	position: absolute;
@@ -39,6 +41,27 @@
 	max-width: 521px;
 	padding-bottom: 48px;
 }
+.img {
+	animation: img-animate 2.5s linear 1s infinite alternate;
+}
 .img img {
 	width: 100%;
+	max-width: 560px;
+}
+
+@keyframes first {
+	from {
+		tranform: scale(50%);
+	}
+	to {
+		tranform: scale(100%);
+	}
+}
+@keyframes img-animate {
+	0% {
+		transform: translate(0, -30px);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
 }

@@ -1,0 +1,48 @@
+.slide {
+	border-radius: 8px;
+	background-color: rgba(47, 50, 65, 0.5);
+	backdrop-filter: blur(2px);
+	padding: 24px;
+}
+.top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 24px;
+}
+.bottom {
+	display: flex;
+	align-items: end;
+	justify-content: space-between;
+}
+.icon {
+	height: 44px;
+	width: 44px;
+}
+.percent {
+	color: #11cabe;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-size: 18px;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	gap: 0 4px;
+}
+.fullName {
+	font-feature-settings: 'clig' off, 'liga' off;
+	padding-bottom: 11px;
+}
+.priceItem {
+	color: #fff;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 27px; /* 108% */
+}
+.abbreviation {
+	color: #5d6588;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px; /* 150% */
+}
