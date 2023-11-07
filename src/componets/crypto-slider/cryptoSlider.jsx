@@ -48,8 +48,6 @@ export default () => {
 				grabCursor={true}
 				speed={1000}
 				loop={true}
-				onSlideChange={() => console.log('slide change')}
-				onSwiper={swiper => console.log(swiper)}
 			>
 				{Object.entries(cryptoData).map(([cryptoId, data]) => {
 					if (cryptoIdMappings[cryptoId]) {

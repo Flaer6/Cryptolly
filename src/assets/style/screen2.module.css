@@ -1,0 +1,63 @@
+.privilege {
+	overflow: hidden;
+}
+.inner {
+	display: flex;
+	align-items: center;
+	gap: 0 68px;
+	padding-top: 152px;
+}
+.right {
+	max-width: 450px;
+}
+.left {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(100px, 285px));
+	gap: 24px;
+	align-items: center;
+}
+.title {
+	position: relative;
+	color: var(--base-grey-0, #fff);
+	padding-bottom: 24px;
+	font-family: Sofia Pro;
+	font-size: 49px;
+	font-weight: 700;
+	line-height: 110%; /* 53.9px */
+}
+.title::before {
+	position: absolute;
+	content: '';
+	width: 787px;
+	height: 223px;
+	background-image: url('../images/privilegeLine.svg');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	top: 97px;
+	z-index: -1;
+	left: -37px;
+}
+.info {
+	padding-bottom: 32px;
+}
+.privilegeBlock {
+	border-radius: 12px;
+	background: var(--base-dark-transparent, rgba(47, 50, 65, 0.5));
+	backdrop-filter: blur(2px);
+	padding: 40px 28px;
+	text-align: center;
+	align-self: center;
+}
+.icon {
+	height: 91px;
+	width: 91px;
+}
+.blockTitle {
+	color: var(--base-grey-0, #fff);
+	font-family: Sofia Pro;
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 120%; /* 30px */
+	padding: 40px 0 16px;
+}

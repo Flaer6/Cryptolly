@@ -2,9 +2,9 @@ import items from './header.data'
 import styles from '../../assets/style/header.module.css'
 
 export default function Menu() {
-	const listItems = items.map(item => (
-		<li className={styles.item}>
-			<a key={item.id} href={item.link} className={styles.link}>
+	const listItems = items.map((item, index) => (
+		<li key={index} className={styles.item}>
+			<a href={item.link} className={styles.link}>
 				{item.name}
 			</a>
 		</li>

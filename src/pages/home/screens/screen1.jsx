@@ -1,7 +1,6 @@
 import styles from '../../../assets/style/screen1.module.css'
 import Button from '../../../componets/buttons/button'
 import Slider from '../../../componets/crypto-slider/cryptoSlider'
-
 export default function Promo() {
 	return (
 		<section className={styles.promo}>
