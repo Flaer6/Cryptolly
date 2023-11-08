@@ -1,11 +1,13 @@
 import Promo from './screens/screen1'
 import Privilege from './screens/screen2'
+import Platform from './screens/screen3'
 
 function Home() {
 	return (
 		<main className="main">
-			<Promo></Promo>
-			<Privilege></Privilege>
+			<Promo />
+			<Privilege />
+			<Platform />
 		</main>
 	)
 }

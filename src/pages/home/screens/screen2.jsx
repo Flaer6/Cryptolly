@@ -8,16 +8,18 @@ function Privilege() {
 			<div className="container">
 				<div className={styles.inner}>
 					<div className={styles.left}>
-						<Block
-							src="manager.svg"
-							title="Portfolio Manager"
-							info="Buy and sell popular digital currencies, keep track of them in the one place."
-						/>
-						<Block
-							src="secutity.svg"
-							title="Vault protection"
-							info="For added security, store your funds in a vault with time delayed withdrawals."
-						/>
+						<div className={styles.box}>
+							<Block
+								src="manager.svg"
+								title="Portfolio Manager"
+								info="Buy and sell popular digital currencies, keep track of them in the one place."
+							/>
+							<Block
+								src="secutity.svg"
+								title="Vault protection"
+								info="For added security, store your funds in a vault with time delayed withdrawals."
+							/>
+						</div>
 						<Block
 							src="mobile.svg"
 							title="Mobile Apps"

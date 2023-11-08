@@ -5,16 +5,20 @@
 	display: flex;
 	align-items: center;
 	gap: 0 68px;
-	padding-top: 152px;
+	padding-top: 100px;
 }
 .right {
 	max-width: 450px;
 }
 .left {
-	display: grid;
-	grid-template-columns: repeat(2, minmax(100px, 285px));
-	gap: 24px;
+	display: flex;
 	align-items: center;
+	gap: 24px;
+}
+.box {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
 }
 .title {
 	position: relative;

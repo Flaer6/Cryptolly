@@ -1,0 +1,54 @@
+.platform {
+	overflow: hidden;
+}
+.inner {
+	padding-top: 120px;
+	display: flex;
+	align-items: center;
+	gap: 0 42px;
+}
+.img img {
+	animation: img-animate 2.5s linear 1s infinite alternate;
+	width: 100%;
+}
+.title {
+	color: #fff;
+	font-family: Sofia Pro;
+	font-size: 49px;
+	font-weight: 700;
+	line-height: 110%;
+	padding-bottom: 24px;
+}
+.info {
+	max-width: 550px;
+}
+.box {
+	position: relative;
+	max-width: 452px;
+	padding-top: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+.box::before {
+	position: absolute;
+	content: '';
+	width: 358.5px;
+	height: 283.992px;
+	background-image: url('../images/platformLine.svg');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	top: -130px;
+	left: 382px;
+	z-index: -1;
+}
+
+@keyframes img-animate {
+	0% {
+		transform: translate(0, -30px);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
+}
