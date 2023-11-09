@@ -1,0 +1,53 @@
+.inner {
+	position: relative;
+	text-align: center;
+	max-width: 841px;
+	margin: 0 auto;
+}
+.inner::before {
+	position: absolute;
+	content: '';
+	width: 579px;
+	height: 277.076px;
+	background-image: url('../images/startLine.svg');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	top: 105px;
+	left: -302px;
+	z-index: -1;
+}
+.subtitle {
+	color: #e5e6ed;
+	font-family: Graphik;
+	font-size: 20px;
+	line-height: 27px; /* 135% */
+	padding-bottom: 16px;
+}
+.title {
+	color: #fff;
+	font-family: Sofia Pro;
+	font-size: 49px;
+	font-weight: 700;
+	line-height: 110%; /* 53.9px */
+	padding-bottom: 40px;
+}
+.form {
+	padding: 8px 8px 8px 32px;
+	display: inline-flex;
+	justify-content: space-between;
+	gap: 0 10px;
+	border-radius: 100px;
+	border: 1px solid #34384c;
+	background-color: rgba(47, 50, 65, 0.5);
+}
+.input {
+	padding: 0 70px 0 0;
+	background: transparent;
+}
+.input::placeholder {
+	color: #5d6588;
+}
+.input:focus {
+	color: #fff;
+}

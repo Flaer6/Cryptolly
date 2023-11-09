@@ -13,10 +13,19 @@
 	font-size: 14px;
 	padding-top: 30px;
 }
+.btn {
+	display: none;
+}
+.mobileMenu {
+	display: none;
+}
 .menu {
 	display: flex;
 	align-items: center;
 	gap: 0 33px;
+}
+.mobileMenu {
+	transition: 0.3s all ease-in;
 }
 .list {
 	display: flex;
@@ -51,4 +60,38 @@
 		#1e68f6 -0.26%,
 		#0047d0 98.59%
 	);
+}
+
+@media (max-width: 940px) {
+	.menu {
+		display: none;
+	}
+	.btn {
+		display: inline-block;
+		z-index: 10;
+	}
+	.wrapper {
+	}
+	.mobileMenu {
+		background-color: #222;
+		padding: 80px 30px 30px 30px;
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		gap: 30px;
+		top: 0;
+		right: 0;
+	}
+	.list {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 15px;
+	}
+	.buttons {
+		flex-direction: column;
+		gap: 20px;
+	}
+	.inner {
+		align-items: flex-start;
+	}
 }

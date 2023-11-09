@@ -1,0 +1,66 @@
+.download {
+	padding-top: 100px;
+	overflow: hidden;
+}
+.inner {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 0 50px;
+	background-image: url('../images/grid-bg.svg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.inner::before {
+	position: absolute;
+	content: '';
+	width: 1005.194px;
+	height: 657.713px;
+	background-image: url('../images/downloadLine.svg');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	top: -185px;
+	left: 493px;
+	z-index: -1;
+}
+.img img {
+	width: 100%;
+	animation: img-animate 2.5s linear 1s infinite alternate;
+}
+.content {
+	max-width: 485px;
+}
+.title {
+	color: #fff;
+	font-family: Sofia Pro;
+	font-size: 49px;
+	font-weight: 700;
+	line-height: 110%;
+	padding-bottom: 24px;
+}
+.info {
+	max-width: 400px;
+	padding-bottom: 48px;
+}
+.text {
+	color: #fff;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-weight: 600;
+	line-height: 24px; /* 150% */
+}
+.box {
+	padding-top: 24px;
+	display: flex;
+	gap: 16px;
+}
+
+@keyframes img-animate {
+	0% {
+		transform: translate(0, -30px);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
+}

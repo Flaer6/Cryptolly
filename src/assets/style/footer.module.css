@@ -1,0 +1,71 @@
+.inner {
+	padding: 103px 0 85px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 20px 10px;
+}
+.text {
+	font-size: 18px;
+	color: #fff;
+	padding-top: 12px;
+}
+.contactList {
+	padding-top: 40px;
+	display: flex;
+	align-items: center;
+	gap: 0 44px;
+}
+.title {
+	color: #fff;
+	font-family: Sofia Pro;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 120%; /* 24px */
+}
+.list,
+.start {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+.item a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+.start {
+	max-width: 355px;
+}
+.form {
+	padding: 8px 8px 8px 32px;
+	display: inline-flex;
+	justify-content: space-between;
+	gap: 0 10px;
+	border-radius: 100px;
+	border: 1px solid #34384c;
+	background-color: rgba(47, 50, 65, 0.5);
+}
+.input {
+	background: transparent;
+}
+.input::placeholder {
+	color: #5d6588;
+}
+.input:focus {
+	color: #fff;
+}
+.copyright {
+	padding: 32px 0;
+	border-top: 1px solid #34384c;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #5d6588;
+	font-feature-settings: 'clig' off, 'liga' off;
+}
+.policy a + a {
+	padding-left: 20px;
+	margin-left: 20px;
+	border-left: 1px solid #34384c;
+}

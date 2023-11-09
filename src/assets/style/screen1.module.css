@@ -31,7 +31,7 @@
 	font-size: 61px;
 	font-style: normal;
 	font-weight: 700;
-	line-height: 110%; /* 67.1px */
+	line-height: 67px; /* 67.1px */
 	padding-bottom: 24px;
 }
 .info {
@@ -54,5 +54,23 @@
 	}
 	100% {
 		transform: translate(0, 0);
+	}
+}
+
+@media (max-width: 1000px) {
+	.img {
+		display: none;
+	}
+}
+@media (max-width: 940px) {
+	.wrapper {
+		padding-top: 140px;
+	}
+	.title {
+		font-size: 50px;
+		line-height: 50px;
+	}
+	.info {
+		padding-bottom: 35px;
 	}
 }

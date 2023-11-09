@@ -9,6 +9,7 @@ import styles from '../../assets/style/cryptoSlider.module.css'
 
 export default () => {
 	const [cryptoData, setCryptoData] = useState({})
+	const [slidesPerView, setSlidesPerView] = useState(3.5)
 	const fetchCryptoData = () => {
 		const cryptoIds = Object.keys(cryptoIdMappings)
 		const apiUrl = `https://api.coingecko.com/api/v3/simple/price?ids=${cryptoIds.join(
@@ -31,12 +32,30 @@ export default () => {
 		return () => clearInterval(intervalId)
 	}, [])
 
+	useEffect(() => {
+		const handleResize = () => {
+			switch (true) {
+				case window.innerWidth <= 1000:
+					setSlidesPerView(2.5)
+					break
+				default:
+					setSlidesPerView(3.5)
+					break
+			}
+		}
+		window.addEventListener('resize', handleResize)
+
+		return () => {
+			window.removeEventListener('resize', handleResize)
+		}
+	}, [])
+
 	return (
 		<>
 			<Swiper
 				modules={[Autoplay, Pagination]}
 				spaceBetween={24}
-				slidesPerView={3.5}
+				slidesPerView={slidesPerView}
 				autoplay={{
 					delay: 2500,
 					disableOnInteraction: false,
