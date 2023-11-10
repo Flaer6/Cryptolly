@@ -35,6 +35,18 @@ export default () => {
 	useEffect(() => {
 		const handleResize = () => {
 			switch (true) {
+				case window.innerWidth <= 350:
+					setSlidesPerView(1)
+					break
+				case window.innerWidth <= 375:
+					setSlidesPerView(1.3)
+					break
+				case window.innerWidth <= 560:
+					setSlidesPerView(1.4)
+					break
+				case window.innerWidth <= 700:
+					setSlidesPerView(2)
+					break
 				case window.innerWidth <= 1000:
 					setSlidesPerView(2.5)
 					break
@@ -54,7 +66,7 @@ export default () => {
 		<>
 			<Swiper
 				modules={[Autoplay, Pagination]}
-				spaceBetween={24}
+				spaceBetween={25}
 				slidesPerView={slidesPerView}
 				autoplay={{
 					delay: 2500,

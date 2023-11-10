@@ -1,3 +1,6 @@
+.start {
+	overflow: hidden;
+}
 .inner {
 	position: relative;
 	text-align: center;
@@ -50,4 +53,33 @@
 }
 .input:focus {
 	color: #fff;
+}
+
+@media (max-width: 750px) {
+	.title {
+		font-size: 37px;
+		line-height: 100%;
+		padding-bottom: 30px;
+	}
+	.subtitle {
+		padding-bottom: 10px;
+	}
+}
+@media (max-width: 500px) {
+	.subtitle {
+		font-size: 16px;
+		padding-bottom: 0;
+	}
+	.title {
+		font-size: 30px;
+		line-height: 100%;
+		padding-bottom: 15px;
+	}
+	.input {
+		padding: 0 5px 0 0;
+	}
+	.inner::before {
+		top: 50px;
+		left: -300px;
+	}
 }

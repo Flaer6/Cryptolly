@@ -11,7 +11,8 @@ export default ({ srcImg, altImg, title, info }) => {
 				src={srcImg}
 				alt={altImg}
 				style={{
-					maxWidth: '111px',
+					display: window.innerWidth <= 400 ? 'none' : 'inline-block',
+					width: '100%',
 					maxHeight: '111px',
 				}}
 			/>

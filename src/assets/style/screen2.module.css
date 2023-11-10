@@ -4,7 +4,7 @@
 .inner {
 	display: flex;
 	align-items: center;
-	gap: 0 68px;
+	gap: 68px;
 	padding-top: 100px;
 }
 .right {
@@ -27,7 +27,7 @@
 	font-family: Sofia Pro;
 	font-size: 49px;
 	font-weight: 700;
-	line-height: 110%; /* 53.9px */
+	line-height: 54px; /* 53.9px */
 }
 .title::before {
 	position: absolute;
@@ -64,4 +64,55 @@
 	font-weight: 700;
 	line-height: 120%; /* 30px */
 	padding: 40px 0 16px;
+}
+
+@media (max-width: 1000px) {
+	.inner {
+		flex-direction: column-reverse;
+	}
+}
+@media (max-width: 510px) {
+	.inner {
+		padding-top: 70px;
+	}
+	.left {
+		flex-direction: column;
+	}
+	.title::before {
+		top: 60px;
+		left: -90px;
+	}
+}
+@media (max-width: 415px) {
+	.title::before {
+		top: 30px;
+		left: -100px;
+	}
+	.blockTitle {
+		padding: 20px 0 6px;
+	}
+	.privilegeBlock {
+		padding: 20px 8px;
+	}
+	.inner {
+		padding-top: 50px;
+		text-align: center;
+		gap: 40px;
+	}
+	.title {
+		font-size: 40px;
+		line-height: 45px;
+		padding-bottom: 17px;
+	}
+	.info {
+		padding-bottom: 25px;
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 415px) {
+	.title {
+		font-size: 35px;
+		line-height: 40px;
+	}
 }

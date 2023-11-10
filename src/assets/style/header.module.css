@@ -73,7 +73,8 @@
 	.wrapper {
 	}
 	.mobileMenu {
-		background-color: #222;
+		background-color: #1e1f25;
+		border-left: 1px solid #222;
 		padding: 80px 30px 30px 30px;
 		display: flex;
 		flex-direction: column;
