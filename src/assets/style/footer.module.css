@@ -69,3 +69,22 @@
 	margin-left: 20px;
 	border-left: 1px solid #34384c;
 }
+@media (max-width: 755px) {
+	.inner {
+		flex-wrap: wrap;
+		justify-content: start;
+		gap: 20px 40px;
+		padding: 70px 0 50px;
+	}
+	.input {
+		padding: 0 5px 0 0;
+	}
+}
+@media (max-width: 600px) {
+	.copyright {
+		padding: 15px 0;
+		font-size: 14px;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
