@@ -50,7 +50,7 @@ export default () => {
 				case window.innerWidth <= 1000:
 					setSlidesPerView(2.5)
 					break
-				default:
+				case window.innerWidth <= 1500:
 					setSlidesPerView(3.5)
 					break
 			}
