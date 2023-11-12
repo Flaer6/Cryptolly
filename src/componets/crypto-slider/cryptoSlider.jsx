@@ -67,7 +67,7 @@ export default () => {
 			<Swiper
 				modules={[Autoplay, Pagination]}
 				spaceBetween={25}
-				slidesPerView={slidesPerView}
+				slidesPerView={3.5}
 				slidesPerGroup={1}
 				autoplay={{
 					delay: 2500,
@@ -80,6 +80,24 @@ export default () => {
 				grabCursor={true}
 				speed={1000}
 				loop={true}
+				breakpoints={{
+				  1000: {
+				    slidesPerView={2.5}
+				  }
+				  700: {
+				    slidesPerView={2}
+				  }
+				  560: {
+				    slidesPerView={1.4}
+				    slidesPerGroup={0.5}
+				  }
+				  375: {
+				    slidesPerView={1.3}
+				  }
+				  350: {
+				    slidesPerView={1}
+				  }
+				}}
 			>
 				{Object.entries(cryptoData).map(([cryptoId, data]) => {
 					if (cryptoIdMappings[cryptoId]) {
