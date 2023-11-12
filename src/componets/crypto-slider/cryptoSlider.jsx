@@ -68,6 +68,7 @@ export default () => {
 				modules={[Autoplay, Pagination]}
 				spaceBetween={25}
 				slidesPerView={slidesPerView}
+				slidesPerGroup={1}
 				autoplay={{
 					delay: 2500,
 					disableOnInteraction: false,
